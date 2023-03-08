@@ -11,7 +11,7 @@ const app = express();
 app.use(express.json()); //get json data from body
 app.use(express.urlencoded({extended: false})); // get data from urlencoded
 app.use(cors({
-  origin: ['http://localhost:3000', 'https://mern-task-app.onrender.com'],
+  origin: ['http://localhost:3000', 'https://mern-task-app.onrender.com', 'https://mern-task-app-ya5p.onrender.com/'],
 }));
 app.use('/api/tasks', taskRoutes);
 
